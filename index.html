@@ -24,16 +24,30 @@
     <main>
         <section>
             <div class="intro-header">
-                <h1>Hello! I'm Kaung Htet...</h1>
-                <p>Software Developer</p>
+                <h1 data-en="Hello! I'm Kaung Htet..." 
+                    data-ja="こんにちは！カウンテッです...">
+                    Hello! I'm Kaung Htet...
+                </h1>
+
+                <p data-en="Software Developer"
+                   data-ja="ソフトウェア開発者">
+                   Software Developer
+                </p>
             </div>
             <div class="intro-container">
                 <div class="intro-text">
-                    <h5 class="intro-description">
-                        I am an IT Engineer from Myanmar. I hold a Bachelor of Engineering (Information Technology) degree from Hmawbi Technological University. I use both Japanese and English in my daily communication.<br /><br />
+                    <div class="intro-description"
+                        data-en="I am an IT Engineer from Myanmar. I hold a Bachelor of Engineering (Information Technology) degree from Hmawbi Technological University. I use both Japanese and English in my daily communication.<br><br>
 
+                        With strong communication skills, problem-solving abilities, critical and analytical thinking, as well as creativity, I actively contribute to various IT projects. I am passionate about continuous learning, enjoy playing football, and love building fun and useful web applications!"
+                        
+                        data-ja="ミャンマー出身のITエンジニアです。Hmawbi Technological Universityで情報技術工学の学士号を取得しました。日常のコミュニケーションでは、日本語と英語の両方を使用しています。<br><br>
+
+                        高いコミュニケーション能力、問題解決能力、論理的・分析的思考力、そして創造力を活かして、さまざまなITプロジェクトに積極的に取り組んでいます。継続的に新しい技術を学ぶことが好きで、サッカーを楽しんだり、便利で楽しいWebアプリケーションを作ったりすることが好きです！">
+                        
+                        I am an IT Engineer from Myanmar. I hold a Bachelor of Engineering (Information Technology) degree from Hmawbi Technological University. I use both Japanese and English in my daily communication.<br><br>
                         With strong communication skills, problem-solving abilities, critical and analytical thinking, as well as creativity, I actively contribute to various IT projects. I am passionate about continuous learning, enjoy playing football, and love building fun and useful web applications!
-                    </h5>
+                    </div>
                 </div>
 
                 <div class="profile-image-container">
@@ -50,24 +64,75 @@
                 <a target="_blank" href="https://www.credly.com/users/kaung-htet.6d1a185d">Credly</a>
             </div>
 
-            <div id="background-color">
-                <button onclick="backgroundColor()">Background Color</button>
+            <div class="controls-container">
+
+                <div id="background-color">
+                    <button
+                        onclick="backgroundColor()"
+                        data-en="Background Color"
+                        data-ja="背景色">
+                        Background Color
+                    </button>
+                </div>
+
+                <div id="language-switch">
+                    <button
+                        onclick="toggleLanguage()"
+                        id="language-button">
+                        日本語
+                    </button>
+                </div>
+
             </div>
+
             <div style="display: none;" class="color-div">
-                <h4>Pick a color</h4>
-                <p style="display: none;">Great... now it's ruined!</p>
-                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
-                <button style="display: none;" onclick="resetColor()">Reset</button>
+
+                <h4
+                    data-en="Pick a color"
+                    data-ja="色を選択">
+                    Pick a color
+                </h4>
+
+                <p
+                    style="display: none;"
+                    data-en="Great... now it's ruined!"
+                    data-ja="いいですね…これで台無しです！">
+                    Great... now it's ruined!
+                </p>
+
+                <input
+                    type="color"
+                    id="color-picker"
+                    onchange="changeColor()"
+                    value="#0084ff" />
+
+                <button
+                    style="display: none;"
+                    onclick="resetColor()"
+                    data-en="Reset"
+                    data-ja="リセット">
+                    Reset
+                </button>
+
             </div>
+
         </section>
 
         <section>
-            <h2>Certifications</h2>
+            <h2 data-en="Certifications" data-ja="資格・認定">
+                Certifications
+            </h2>
+
             <table>
                 <thead>
                 <tr>
-                    <th>Issuing Organization</th>
-                    <th>Certifications & Credentials</th>
+                    <th data-en="Issuing Organization" data-ja="発行機関">
+                        Issuing Organization
+                    </th>
+
+                    <th data-en="Certifications & Credentials" data-ja="資格・認定資格">
+                        Certifications & Credentials
+                    </th>
                 </tr>
                 </thead>
             <tbody>
@@ -97,12 +162,18 @@
         </section>
 
         <section>
-            <h2>Skills</h2>
+            <h2 data-en="Skills" data-ja="スキル">
+                Skills
+            </h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Area</th>
-                        <th>Technologies</th>
+                        <th data-en="Area" data-ja="分野">
+                            Area
+                        </th>
+                        <th data-en="Technologies" data-ja="技術">
+                            Technologies
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -139,12 +210,18 @@
         </section>
 
         <section>
-            <h2>Lastest Projects</h2>
+            <h2 data-en="Latest Projects" data-ja="最新のプロジェクト">
+                Latest Projects
+            </h2>
             <div class="cards-grid">
 
                 <div class="project-card">
                     <div>
-                        <h4>E-Shop | E-Commerce Full Stack Application</h4>
+                        <h4
+                            data-en="E-Shop | E-Commerce Full Stack Application"
+                            data-ja="E-Shop | ECフルスタックアプリケーション">
+                            E-Shop | E-Commerce Full Stack Application
+                        </h4>
                         <div class="tech-list">
                             <div class="card-button-secondary">
                                 <p>Java</p>
@@ -156,11 +233,27 @@
                                 <p>PostgreSQL</p>
                             </div>
                         </div>
-                        <p>A complete Java Full Stack E-Commerce system, including secure authentication, API development, payment integration, and cloud deployment.
+                        <p
+                            data-en="A complete Java Full Stack E-Commerce system, including secure authentication, API development, payment integration, and cloud deployment."
+                            data-ja="安全な認証、API開発、決済機能、クラウドへのデプロイを含む、JavaによるフルスタックECシステムです。">
+                            A complete Java Full Stack E-Commerce system, including secure authentication, API development, payment integration, and cloud deployment.
                         </p>
                         <div class="project-links">
-                            <a target="_blank" href="https://sb-ecommerce-kaung-htet.netlify.app/">Live</a>
-                            <a target="_blank" href="https://github.com/KaungHtet6107/E-Commerce-Full-Stack-Application">GitHub</a>
+                            <a
+                                target="_blank"
+                                href="https://sb-ecommerce-kaung-htet.netlify.app/"
+                                data-en="Live"
+                                data-ja="サイトを見る">
+                                Live
+                            </a>
+
+                            <a
+                                target="_blank"
+                                href="https://github.com/KaungHtet6107/E-Commerce-Full-Stack-Application"
+                                data-en="GitHub"
+                                data-ja="GitHubを見る">
+                                GitHub
+                            </a>
                         </div>
                     </div>
                     <div class="img-div">
@@ -173,7 +266,11 @@
 
                 <div class="project-card">
                     <div>
-                        <h4>Fast React Pizza | Pizza Ordering Application</h4>
+                        <h4
+                            data-en="Fast React Pizza | Pizza Ordering Application"
+                            data-ja="Fast React Pizza | ピザ注文アプリケーション">
+                            Fast React Pizza | Pizza Ordering Application
+                        </h4>
                         <div class="tech-list">
                             <div class="card-button-secondary">
                                 <p>React</p>
@@ -185,11 +282,27 @@
                                 <p>Tailwind CSS</p>
                             </div>
                         </div>
-                        <p>A responsive and dynamic pizza ordering application built with React, Vite, Redux Toolkit, Thunk middleware, and Tailwind CSS. 
+                        <p
+                            data-en="A responsive and dynamic pizza ordering application built with React, Vite, Redux Toolkit, Thunk middleware, and Tailwind CSS."
+                            data-ja="React、Vite、Redux Toolkit、Thunkミドルウェア、Tailwind CSSで構築された応答性があり、動的なピザ注文アプリケーションです。">
+                            A responsive and dynamic pizza ordering application built with React, Vite, Redux Toolkit, Thunk middleware, and Tailwind CSS.
                         </p>
                         <div class="project-links">
-                            <a target="_blank" href="https://fast-react-pizza-by-kh.netlify.app/">Live</a>
-                            <a target="_blank" href="https://github.com/KaungHtet6107/fast-react-pizza">GitHub</a>
+                            <a
+                                target="_blank"
+                                href="https://fast-react-pizza-by-kh.netlify.app/"
+                                data-en="Live"
+                                data-ja="サイトを見る">
+                                Live
+                            </a>
+
+                            <a
+                                target="_blank"
+                                href="https://github.com/KaungHtet6107/fast-react-pizza"
+                                data-en="GitHub"
+                                data-ja="GitHubを見る">
+                                GitHub
+                            </a>
                         </div>
                     </div>
                     <div class="img-div">
@@ -202,7 +315,11 @@
 
                 <div class="project-card">
                     <div>
-                        <h4>The Wild Oasis Admin | Hotel Management System</h4>
+                        <h4
+                            data-en="The Wild Oasis Admin | Hotel Management System"
+                            data-ja="The Wild Oasis Admin | ホテル管理システム">
+                            The Wild Oasis Admin | Hotel Management System
+                        </h4>
                         <div class="tech-list">
                             <div class="card-button-secondary">
                                 <p>React</p>
@@ -214,11 +331,26 @@
                                 <p>Supabase</p>
                             </div>
                         </div>
-                        <p>A full-featured internal hotel management system built for The Wild Oasis, a boutique hotel with eight luxury wooden cabins. This application is designed for hotel staff to manage daily operations including bookings, cabins, guest management, and check-ins through a secure admin dashboard.
+                        <p
+                            data-en="A full-featured internal hotel management system built for The Wild Oasis, a boutique hotel with eight luxury wooden cabins. This application is designed for hotel staff to manage daily operations including bookings, cabins, guest management, and check-ins through a secure admin dashboard."
+                            data-ja="The Wild Oasisのために開発した、8棟の高級木造キャビンを備えたブティックホテル向けの社内ホテル管理システムです。ホテルスタッフが安全な管理ダッシュボードを通じて、予約、キャビン、宿泊客の管理、チェックインなどの日常業務を効率的に管理できます。">
+                            A full-featured internal hotel management system built for The Wild Oasis, a boutique hotel with eight luxury wooden cabins. This application is designed for hotel staff to manage daily operations including bookings, cabins, guest management, and check-ins through a secure admin dashboard.
                         </p>
                         <div class="project-links">
-                            <a target="_blank" href="https://the-wild-oasis-admin-kaung-htet.vercel.app/">Live</a>
-                            <a target="_blank" href="https://github.com/KaungHtet6107/The-Wild-Oasis/tree/main/the-wild-oasis-admin">GitHub</a>
+                            <a
+                                target="_blank"
+                                href="https://the-wild-oasis-admin-kaung-htet.vercel.app/"
+                                data-en="Live"
+                                data-ja="サイトを見る">
+                                Live
+                            </a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/KaungHtet6107/The-Wild-Oasis/tree/main/the-wild-oasis-admin"
+                                data-en="GitHub"
+                                data-ja="GitHubを見る">
+                                GitHub
+                            </a>
                         </div>
                     </div>
                     <div class="img-div">
@@ -231,7 +363,11 @@
 
                 <div class="project-card">
                     <div>
-                        <h4>The Wild Oasis Website | Customer Booking Platform</h4>
+                        <h4
+                            data-en="The Wild Oasis Website | Customer Booking Platform"
+                            data-ja="The Wild Oasis Website | 顧客向け予約プラットフォーム">
+                            The Wild Oasis Website | Customer Booking Platform
+                        </h4>
                         <div class="tech-list">
                             <div class="card-button-secondary">
                                 <p>NextJS</p>
@@ -243,11 +379,26 @@
                                 <p>Supabase</p>
                             </div>
                         </div>
-                        <p>A modern customer-facing booking platform for The Wild Oasis, allowing guests to browse cabins, check availability, and book stays online. This is a fast, interactive Single Page Application focused on user experience.
+                        <p
+                            data-en="A modern customer-facing booking platform for The Wild Oasis, allowing guests to browse cabins, check availability, and book stays online. This is a fast, interactive Single Page Application focused on user experience."
+                            data-ja="The Wild Oasisの顧客向け予約プラットフォームです。宿泊者はキャビンを閲覧し、空室状況を確認して、オンラインで宿泊予約を行うことができます。ユーザー体験を重視した、高速でインタラクティブなSPA（シングルページアプリケーション）として開発しています。">
+                            A modern customer-facing booking platform for The Wild Oasis, allowing guests to browse cabins, check availability, and book stays online. This is a fast, interactive Single Page Application focused on user experience.
                         </p>
                         <div class="project-links">
-                            <a target="_blank" href="https://the-wild-oasis-website-kaung-htet.vercel.app/">Live</a>
-                            <a target="_blank" href="https://github.com/KaungHtet6107/The-Wild-Oasis/tree/main/the-wild-oasis-website">GitHub</a>
+                            <a
+                                target="_blank"
+                                href="https://the-wild-oasis-website-kaung-htet.vercel.app/"
+                                data-en="Live"
+                                data-ja="サイトを見る">
+                                Live
+                            </a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/KaungHtet6107/The-Wild-Oasis/tree/main/the-wild-oasis-website"
+                                data-en="GitHub"
+                                data-ja="GitHubを見る">
+                                GitHub
+                            </a>
                         </div>
                     </div>
                     <div class="img-div">
@@ -260,7 +411,11 @@
 
                 <div class="project-card">
                     <div>
-                        <h4>Expenny | The Subscription Tracker</h4>
+                        <h4
+                            data-en="Expenny | The Subscription Tracker"
+                            data-ja="Expenny | サブスクリプション管理アプリ">
+                            Expenny | The Subscription Tracker
+                        </h4>
                         <div class="tech-list">
                             <div class="card-button-secondary">
                                 <p>NextJS</p>
@@ -272,11 +427,26 @@
                                 <p>Firebase</p>
                             </div>
                         </div>
-                        <p>Track all your subscription analytics!
+                        <p
+                            data-en="Track all your subscription analytics!"
+                            data-ja="サブスクリプションの利用状況や分析データを一元管理できます。">
+                            Track all your subscription analytics!
                         </p>
                         <div class="project-links">
-                            <a target="_blank" href="https://expenny-the-subscription-tracker.netlify.app/">Live</a>
-                            <a target="_blank" href="https://github.com/KaungHtet6107/4_expenny">GitHub</a>
+                            <a
+                                target="_blank"
+                                href="https://expenny-the-subscription-tracker.netlify.app/"
+                                data-en="Live"
+                                data-ja="サイトを見る">
+                                Live
+                            </a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/KaungHtet6107/4_expenny"
+                                data-en="GitHub"
+                                data-ja="GitHubを見る">
+                                GitHub
+                            </a>
                         </div>
                     </div>
                     <div class="img-div">
@@ -289,7 +459,11 @@
 
                 <div class="project-card">
                     <div>
-                        <h4>Smolstore | E-Commerce Store</h4>
+                        <h4
+                            data-en="Smolstore | E-Commerce Store"
+                            data-ja="Smolstore | ECサイト">
+                            Smolstore | E-Commerce Store
+                        </h4>
                         <div class="tech-list">
                             <div class="card-button-secondary">
                                 <p>NextJS</p>
@@ -301,11 +475,26 @@
                                 <p>Stripe</p>
                             </div>
                         </div>
-                        <p>A super cool store for programmers and productivity friends!
+                        <p
+                            data-en="A super cool store for programmers and productivity friends!"
+                            data-ja="プログラマーや生産性向上を目指す方に向けた、シンプルで使いやすいオンラインストアです。">
+                            A super cool store for programmers and productivity friends!
                         </p>
                         <div class="project-links">
-                            <a target="_blank" href="https://main.d2i5dej5l24kok.amplifyapp.com/">Live</a>
-                            <a target="_blank" href="https://github.com/KaungHtet6107/3_smolstore">GitHub</a>
+                            <a
+                                target="_blank"
+                                href="https://main.d2i5dej5l24kok.amplifyapp.com/"
+                                data-en="Live"
+                                data-ja="サイトを見る">
+                                Live
+                            </a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/KaungHtet6107/3_smolstore"
+                                data-en="GitHub"
+                                data-ja="GitHubを見る">
+                                GitHub
+                            </a>
                         </div>
                     </div>
                     <div class="img-div">
@@ -318,7 +507,11 @@
 
                 <div class="project-card">
                     <div>
-                        <h4>Brogram | Workout Training Program</h4>
+                        <h4
+                            data-en="Brogram | Workout Training Program"
+                            data-ja="Brogram | ワークアウトトレーニングプログラム">
+                            Brogram | Workout Training Program
+                        </h4>
                         <div class="tech-list">
                             <div class="card-button-secondary">
                                 <p>ReactJS</p>
@@ -330,11 +523,26 @@
                                 <p>JavaScript</p>
                             </div>
                         </div>
-                        <p>The Simple 30 Workouts Training Plan.
+                        <p
+                            data-en="The Simple 30 Workouts Training Plan."
+                            data-ja="30種類のワークアウトを簡単に実践できるトレーニングプランです。">
+                            The Simple 30 Workouts Training Plan.
                         </p>
                         <div class="project-links">
-                            <a target="_blank" href="https://brogram-simple-workout-plan.netlify.app">Live</a>
-                            <a target="_blank" href="https://github.com/KaungHtet6107/2_brogram">GitHub</a>
+                            <a
+                                target="_blank"
+                                href="https://brogram-simple-workout-plan.netlify.app"
+                                data-en="Live"
+                                data-ja="サイトを見る">
+                                Live
+                            </a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/KaungHtet6107/2_brogram"
+                                data-en="GitHub"
+                                data-ja="GitHubを見る">
+                                GitHub
+                            </a>
                         </div>
                     </div>
                     <div class="img-div">
@@ -349,32 +557,114 @@
         </section>
 
         <section>
+            <h2
+                data-en="Additional Projects"
+                data-ja="その他のプロジェクト">
+                Additional Projects
+            </h2>
             <div class="project-card">
-             <div>
-                <h2>Additional Projects</h2>
-                <h4>Java Projects</h4>
-                    <div class="project-links">
-                        <a target="_blank" href="https://github.com/KaungHtet6107/Spring-AI-Demo">Spring AI Demo</a>
-                        <a target="_blank" href="https://github.com/KaungHtet6107/java-database-capstone">SmartCare Solutions</a>
-                        <a target="_blank" href="https://github.com/KaungHtet6107/Retail-Management-System">Retail System</a>
-                        <a target="_blank" href="https://github.com/KaungHtet6107/image_recognition_java">Image Recognition</a>
-                        <a target="_blank" href="https://github.com/KaungHtet6107/java_sentiment_analyzer">Sentiment Analyzer</a>
-                    </div>
+            <div>
+                <h4
+                    data-en="Java Projects"
+                    data-ja="Javaプロジェクト">
+                    Java Projects
+                </h4>
+
+                <div class="project-links">
+                    <a
+                        target="_blank"
+                        href="https://github.com/KaungHtet6107/Spring-AI-Demo"
+                        data-en="Spring AI Demo"
+                        data-ja="Spring AIデモ">
+                        Spring AI Demo
+                    </a>
+
+                    <a
+                        target="_blank"
+                        href="https://github.com/KaungHtet6107/java-database-capstone"
+                        data-en="SmartCare Solutions"
+                        data-ja="SmartCare Solutions">
+                        SmartCare Solutions
+                    </a>
+
+                    <a
+                        target="_blank"
+                        href="https://github.com/KaungHtet6107/Retail-Management-System"
+                        data-en="Retail System"
+                        data-ja="小売管理システム">
+                        Retail System
+                    </a>
+
+                    <a
+                        target="_blank"
+                        href="https://github.com/KaungHtet6107/image_recognition_java"
+                        data-en="Image Recognition"
+                        data-ja="画像認識システム">
+                        Image Recognition
+                    </a>
+
+                    <a
+                        target="_blank"
+                        href="https://github.com/KaungHtet6107/java_sentiment_analyzer"
+                        data-en="Sentiment Analyzer"
+                        data-ja="感情分析システム">
+                        Sentiment Analyzer
+                    </a>
                 </div>
             </div>
+        </div>
 
         <div class="project-card">
-             <div>
-                <h4>Python Projects</h4>
-                    <div class="project-links">
-                        <a target="_blank" href="https://github.com/KaungHtet6107/text-encryption-decryption">Advanced Encryption System</a>
-                        <a target="_blank" href="https://github.com/KaungHtet6107/Python-Projects/tree/main/email-webcam-detection">Email Webcam Detection</a>
-                        <a target="_blank" href="https://github.com/KaungHtet6107/Python-Projects/tree/main/hotel_booking_system">Hotel Booking</a>
-                        <a target="_blank" href="https://github.com/KaungHtet6107/Python-Projects/tree/main/AI_News_Digest">AI News Digest</a>
-                        <a target="_blank" href="https://github.com/KaungHtet6107/Python-Projects/tree/main/super-mario-game">Super Mario</a>
-                    </div>
+            <div>
+                <h4
+                    data-en="Python Projects"
+                    data-ja="Pythonプロジェクト">
+                    Python Projects
+                </h4>
+
+                <div class="project-links">
+                    <a
+                        target="_blank"
+                        href="https://github.com/KaungHtet6107/text-encryption-decryption"
+                        data-en="Advanced Encryption System"
+                        data-ja="高度暗号化システム">
+                        Advanced Encryption System
+                    </a>
+
+                    <a
+                        target="_blank"
+                        href="https://github.com/KaungHtet6107/Python-Projects/tree/main/email-webcam-detection"
+                        data-en="Email Webcam Detection"
+                        data-ja="メール・Webカメラ検出システム">
+                        Email Webcam Detection
+                    </a>
+
+                    <a
+                        target="_blank"
+                        href="https://github.com/KaungHtet6107/Python-Projects/tree/main/hotel_booking_system"
+                        data-en="Hotel Booking"
+                        data-ja="ホテル予約システム">
+                        Hotel Booking
+                    </a>
+
+                    <a
+                        target="_blank"
+                        href="https://github.com/KaungHtet6107/Python-Projects/tree/main/AI_News_Digest"
+                        data-en="AI News Digest"
+                        data-ja="AIニュースダイジェスト">
+                        AI News Digest
+                    </a>
+
+                    <a
+                        target="_blank"
+                        href="https://github.com/KaungHtet6107/Python-Projects/tree/main/super-mario-game"
+                        data-en="Super Mario"
+                        data-ja="スーパーマリオ">
+                        Super Mario
+                    </a>
                 </div>
-            </div>    
+            </div>
+        </div>    
 
 
         </section>
@@ -423,7 +713,28 @@
             colorDiv.style.display = 'none'
         }
 
-        // 3. is to assign the functions to the buttons by adding them function call to the actual elements (done above in the html code)
+        // Language switching
+        let currentLanguage = 'en';
+
+        function toggleLanguage() {
+            const translatableElements = document.querySelectorAll('[data-en]');
+            const languageButton = document.querySelector('#language-switch button');
+
+            currentLanguage = currentLanguage === 'en' ? 'ja' : 'en';
+
+            translatableElements.forEach(element => {
+                element.innerHTML = element.dataset[currentLanguage];
+            });
+
+            if (currentLanguage === 'ja') {
+                languageButton.textContent = 'English';
+                document.documentElement.lang = 'ja';
+            } else {
+                languageButton.textContent = '日本語';
+                document.documentElement.lang = 'en';
+            }
+        }
+
     </script>
 </body>
 

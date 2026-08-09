@@ -162,3 +162,25 @@ section {
         height: 180px;
     }
 }
+
+/* Background color and language controls */
+.controls-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+/* Keep the two control buttons horizontal */
+#background-color,
+#language-switch {
+    display: flex;
+    align-items: center;
+}
+
+/* Color picker area */
+.color-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
