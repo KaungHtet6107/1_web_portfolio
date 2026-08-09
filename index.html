@@ -47,10 +47,11 @@
                 </a>
                 <a target="_blank" href="https://github.com/KaungHtet6107">GitHub</a>
                 <a target="_blank" href="https://www.linkedin.com/in/kaung-htet-62487421a/">LinkedIn</a>
+                <a target="_blank" href="https://www.credly.com/users/kaung-htet.6d1a185d">Credly</a>
             </div>
 
-            <div id="play-game">
-                <button onclick="playGame()">Play game???</button>
+            <div id="background-color">
+                <button onclick="backgroundColor()">Background Color</button>
             </div>
             <div style="display: none;" class="color-div">
                 <h4>Pick a color</h4>
@@ -58,6 +59,41 @@
                 <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
                 <button style="display: none;" onclick="resetColor()">Reset</button>
             </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Issuing Organization</th>
+                    <th>Certifications & Credentials</th>
+                </tr>
+                </thead>
+            <tbody>
+                <tr>
+                <td>IBM</td>
+                <td>IBM Java Developer Professional Certificate</td>
+                </tr>
+                <tr>
+                <td>Cisco</td>
+                <td>Python Essentials</td>
+                </tr>
+                <tr>
+                <td>AWS</td>
+                <td>AWS Certified Cloud Practitioner | AWS Certified AI Practitioner</td>
+                </tr>
+                <tr>
+                <td>Cisco</td>
+                <td>Networking Basics</td>
+                </tr>
+                <tr>
+                <td>Google</td>
+                <td>Google Data Analytics Professional Certificate</td>
+                </tr>
+                
+            </tbody>
+        </table>
         </section>
 
         <section>
@@ -96,7 +132,7 @@
                     </tr>
                     <tr>
                         <td>Design & Tools</td>
-                        <td>Canva | Pixlr | Microsoft Paint | Google Cloud Console | Stripe</td>
+                        <td>Canva | Pixlr | Microsoft Paint | Google Cloud Console | Stripe | Bolt</td>
                     </tr>
                 </tbody>
             </table>
@@ -311,9 +347,42 @@
 
             </div>
         </section>
+
+        <section>
+            <div class="project-card">
+             <div>
+                <h2>Additional Projects</h2>
+                <h4>Java Projects</h4>
+                    <div class="project-links">
+                        <a target="_blank" href="https://github.com/KaungHtet6107/Spring-AI-Demo">Spring AI Demo</a>
+                        <a target="_blank" href="https://github.com/KaungHtet6107/java-database-capstone">SmartCare Solutions</a>
+                        <a target="_blank" href="https://github.com/KaungHtet6107/Retail-Management-System">Retail System</a>
+                        <a target="_blank" href="https://github.com/KaungHtet6107/image_recognition_java">Image Recognition</a>
+                        <a target="_blank" href="https://github.com/KaungHtet6107/java_sentiment_analyzer">Sentiment Analyzer</a>
+                    </div>
+                </div>
+            </div>
+
+        <div class="project-card">
+             <div>
+                <h4>Python Projects</h4>
+                    <div class="project-links">
+                        <a target="_blank" href="https://github.com/KaungHtet6107/text-encryption-decryption">Advanced Encryption System</a>
+                        <a target="_blank" href="https://github.com/KaungHtet6107/Python-Projects/tree/main/email-webcam-detection">Email Webcam Detection</a>
+                        <a target="_blank" href="https://github.com/KaungHtet6107/Python-Projects/tree/main/hotel_booking_system">Hotel Booking</a>
+                        <a target="_blank" href="https://github.com/KaungHtet6107/Python-Projects/tree/main/AI_News_Digest">AI News Digest</a>
+                        <a target="_blank" href="https://github.com/KaungHtet6107/Python-Projects/tree/main/super-mario-game">Super Mario</a>
+                    </div>
+                </div>
+            </div>    
+
+
+        </section>
+
+
     </main>
     <footer>
-        <p>By <a href="https://github.com/KaungHtet6107" target="_blank">Kaung</a> ⭐️ the repo on <a target="_blank"
+        <p>By <a href="https://github.com/KaungHtet6107" target="_blank">Kaung</a> ⭐️ the repository on <a target="_blank"
                 href="https://github.com/KaungHtet6107/1_web_portfolio">GitHub</a></p>
     </footer>
     <script>
@@ -325,11 +394,11 @@
         const colorDiv = document.querySelector('.color-div')
         const hiddenText = document.querySelector('.color-div p')
         const resetBtn = document.querySelector('.color-div button')
-        const playBtn = document.getElementById('play-game')
+        const playBtn = document.getElementById('background-color')
 
         // 2. create the functions 
 
-        function playGame() {
+        function backgroundColor() {
             // this function enables the play of the game by showing the color selector input
             colorDiv.style.display = 'block'
             playBtn.style.display = 'none'
