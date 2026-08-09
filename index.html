@@ -64,29 +64,21 @@
                 <a target="_blank" href="https://www.credly.com/users/kaung-htet.6d1a185d">Credly</a>
             </div>
 
+
             <div class="controls-container">
 
-                <div id="background-color">
-                    <button
-                        onclick="backgroundColor()"
-                        data-en="Background Color"
-                        data-ja="背景色">
-                        Background Color
-                    </button>
-                </div>
-
-                <div id="language-switch">
-                    <button
-                        onclick="toggleLanguage()"
-                        id="language-button">
-                        日本語
-                    </button>
-                </div>
-
+            <!-- Background Color -->
+            <div id="background-color">
+                <button
+                    onclick="backgroundColor()"
+                    data-en="Background Color"
+                    data-ja="背景色">
+                    Background Color
+                </button>
             </div>
 
+            <!-- Color Picker -->
             <div style="display: none;" class="color-div">
-
                 <h4
                     data-en="Pick a color"
                     data-ja="色を選択">
@@ -113,8 +105,44 @@
                     data-ja="リセット">
                     Reset
                 </button>
-
             </div>
+
+            <!-- Language Switch -->
+            <div id="language-switch">
+                <button
+                    onclick="toggleLanguage()"
+                    id="language-button">
+                    日本語へ
+                </button>
+            </div>
+
+            <!-- Resume Download -->
+            <div id="resume-download">
+                <button
+                    onclick="downloadResume()"
+                    data-en="Resume"
+                    data-ja="履歴書_英語">
+                    Resume
+                </button>
+            </div>
+            <div id="resume-download">
+                <button
+                    onclick="downloadResume1()"
+                    data-en="履歴書"
+                    data-ja="履歴書_日本語">
+                    履歴書
+                </button>
+            </div>
+            <div id="resume-download">
+                <button
+                    onclick="downloadResume2()"
+                    data-en="職務経歴書"
+                    data-ja="職務経歴書_日本語">
+                    職務経歴書
+                </button>
+            </div>
+
+        </div>
 
         </section>
 
@@ -730,9 +758,49 @@
                 languageButton.textContent = 'English';
                 document.documentElement.lang = 'ja';
             } else {
-                languageButton.textContent = '日本語';
+                languageButton.textContent = '日本語へ';
                 document.documentElement.lang = 'en';
             }
+        }
+
+        // Resume download
+        function downloadResume() {
+            const resumePath = 'public/Kaung_Htet_Resume.pdf';
+
+            const link = document.createElement('a');
+
+            link.href = resumePath;
+            link.download = 'Kaung_Htet_Resume.pdf';
+
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function downloadResume1() {
+            const resumePath = 'public/履歴書_カウンテッ.xlsx';
+
+            const link = document.createElement('a');
+
+            link.href = resumePath;
+            link.download = '履歴書_カウンテッ.xlsx';
+
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function downloadResume2() {
+            const resumePath = 'public/職務経歴書_カウンテッ.xlsx';
+
+            const link = document.createElement('a');
+
+            link.href = resumePath;
+            link.download = '職務経歴書_カウンテッ.xlsx';
+
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
 
     </script>
