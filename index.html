@@ -115,9 +115,9 @@
                     日本語へ
                 </button>
             </div>
-
+            
             <!-- Resume Download -->
-            <div id="resume-download">
+            <!-- <div id="resume-download">
                 <button
                     onclick="downloadResume()"
                     data-en="Resume"
@@ -140,7 +140,8 @@
                     data-ja="職務経歴書_日本語">
                     職務経歴書
                 </button>
-            </div>
+            </div> -->
+            
 
         </div>
 
@@ -787,7 +788,7 @@
             const link = document.createElement('a');
 
             link.href = resumePath;
-            //link.download = '履歴書_カウンテッ.xlsx';
+            link.download = '履歴書_カウンテッ.xlsx';
 
             document.body.appendChild(link);
             link.click();
@@ -800,7 +801,7 @@
             const link = document.createElement('a');
 
             link.href = resumePath;
-            //link.download = '職務経歴書_カウンテッ.xlsx';
+            link.download = '職務経歴書_カウンテッ.xlsx';
 
             document.body.appendChild(link);
             link.click();
